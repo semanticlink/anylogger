@@ -62,17 +62,16 @@ export interface AnyLogger<L extends BaseLevels, T extends BaseLogger<L> = Logge
    * @param name The name of the logger to use
    * @param level The log level.
    * @param message The (formatted) message or any data to log.
-   * @param [params] Additional log (formatting) arguments.
+   * @param args Additional log (formatting) arguments.
    */
   log(name: string, level: keyof L, message?: any, ...args: any[]): void
-  
+
   /**
    * The log function used by `anylogger.new`.
    *
    * @param name The name of the logger to use
    * @param args The log arguments.
    * @param message The (formatted) message or any data to log.
-   * @param [params] Additional log (formatting) arguments.
    */
   log(name: string, message?: any, ...args: any[]): void
 
@@ -83,6 +82,6 @@ export interface AnyLogger<L extends BaseLevels, T extends BaseLogger<L> = Logge
   ext(logger: T): T
 }
 
-declare const anylogger: AnyLogger<BaseLevels>
+declare const anylogger: AnyLogger<BaseLevels>;
 
-export default anylogger
+export default anylogger;
