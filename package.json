@@ -1,8 +1,9 @@
 {
   "name": "anylogger",
-  "version": "0.22.0",
+  "version": "0.22.0ts",
   "description": "Get a logger. Any logger.",
   "main": "anylogger.js",
+  "typings": "anylogger.d.ts",
   "files": [
     "anylogger.js",
     "anylogger.d.ts",
