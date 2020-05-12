@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production node build.js",
     "test": "mocha anylogger.spec.js",
-    "prepare": "npm run test && npm run build"
+    "X-prepare": "npm run test && npm run build"
   },
   "author": "Stijn de Witt",
   "license": "MIT",
